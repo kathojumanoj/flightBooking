@@ -12,7 +12,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://flight-booking-backend-omega.vercel.app/login', {
+      const response = await axios.post('https://flightbooking-ebx7.onrender.com/login', {
         email,
         password,
       });
