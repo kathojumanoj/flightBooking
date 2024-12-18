@@ -36,7 +36,7 @@ const Signup = () => {
       return;
     }
     try {
-      const response = await axios.post('https://flight-booking-backend-omega.vercel.app/signup', {
+      const response = await axios.post('https://flightbooking-ebx7.onrender.com/signup', {
         username,
         email,
         phno,
