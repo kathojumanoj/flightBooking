@@ -12,7 +12,7 @@ export default function MyTickets() {
   useEffect(() => {
     const fetchBookings = async () => {
       try {
-        const response = await axios.get("https://flight-booking-backend-omega.vercel.app/bookings", {
+        const response = await axios.get("https://flightbooking-ebx7.onrender.com/bookings", {
           params:{userEmail }
         });
         setBookings(response.data.bookings || []); // Ensure it's an array
