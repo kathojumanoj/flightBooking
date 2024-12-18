@@ -80,7 +80,7 @@ export default function BookForm() {
       // Send data to the server
       if(userEmail!=="")
       {
-      const response = await axios.post('https://flight-booking-backend-omega.vercel.app/bookings', bookingDetails);
+      const response = await axios.post('https://flightbooking-ebx7.onrender.com/bookings', bookingDetails);
   
       console.log(response.data.message); // Success message
       setIsModalOpen(true);
