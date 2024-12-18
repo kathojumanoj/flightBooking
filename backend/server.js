@@ -52,7 +52,7 @@ const userSchema = new mongoose.Schema({
   const Booking = mongoose.model('flightBooking', bookingSchema);
   
   // POST Route: To save booking details
-  app.post('https://flight-booking-backend-omega.vercel.app/bookings', async (req, res) => {
+  app.post('/bookings', async (req, res) => {
     console.log(req.body);
     try {
       const { userEmail,departure, arrival, classType, ticketCount, totalAmount, selectedDate,selectedTime } = req.body;
@@ -85,7 +85,7 @@ const userSchema = new mongoose.Schema({
   });
   
  // GET Route: Fetch all bookings by email
-app.get('https://flight-booking-backend-omega.vercel.app/bookings', async (req, res) => {
+app.get('/bookings', async (req, res) => {
     try {
       const { userEmail } = req.query;
     console.log("Getting all booking ");
@@ -108,12 +108,12 @@ app.get('https://flight-booking-backend-omega.vercel.app/bookings', async (req, 
   });
   
 
-app.get('https://flight-booking-backend-omega.vercel.app/', (req, res) => {
+app.get('/', (req, res) => {
   res.send('Backend is running!');
 });
 
 
-app.post('https://flight-booking-backend-omega.vercel.app/signup', async (req, res) => {
+app.post('/signup', async (req, res) => {
     console.log(req.body);
     // res.send(req.body);
 
@@ -150,7 +150,7 @@ app.post('https://flight-booking-backend-omega.vercel.app/signup', async (req, r
 });
 
 
-app.post("https://flight-booking-backend-omega.vercel.app/login",async (req,res)=>{
+app.post("/login",async (req,res)=>{
 
     const { email, password } = req.body;
     console.log(email);
