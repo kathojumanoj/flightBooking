@@ -109,7 +109,7 @@ app.get('/bookings', async (req, res) => {
   
 
 app.get('/', (req, res) => {
-  res.send('Backend is running!');
+  res.send('Backend is running! Manojj...');
 });
 
 
