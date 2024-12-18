@@ -1,0 +1,26 @@
+.my-tickets-container {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  width: 400px;
+  margin: 0 auto;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ticket-details {
+  margin-top: 20px;
+}
+
+.ticket-details p {
+  margin: 5px 0;
+  color: white;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.ticket-details p strong {
+  color: #505050;
+}

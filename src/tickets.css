@@ -1,0 +1,68 @@
+/* General container styles */
+
+.tickets-container {
+    /* background-color: aqua; */
+    width: 90%;
+    max-width: 800px;
+    margin: 2rem auto;
+    font-family: Arial, sans-serif;
+    color: #333;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  /* Heading */
+  .tickets-container h2 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Ticket card styles */
+  .ticket-card {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem 1.5rem;
+    margin: 0.8rem 0;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .ticket-card:hover {
+    transform: scale(1.02);
+    background-color: rgb(215, 225, 250);
+  }
+  
+  /* Ticket information */
+  .ticket-card p {
+    margin: 0.5rem 0;
+    line-height: 1.4;
+  }
+  
+  .ticket-card p strong {
+    color: #34495e;
+    font-weight: bold;
+  }
+  
+  /* Loading and error messages */
+  .loading,
+  .error {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+  }
+  
+  .error {
+    color: #e74c3c;
+  }
+  
+  .no-bookings {
+    text-align: center;
+    color: #7f8c8d;
+    font-size: 1.1rem;
+    margin-top: 2rem;
+  }
+  
