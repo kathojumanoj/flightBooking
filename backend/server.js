@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 
 const PORT = process.env.PORT || 3001;
-const MONGODB_URI = 'mongodb://localhost:27017/Taras'; // Replace with your MongoDB URI
+const MONGODB_URI = 'mongodb+srv://kathojumanoj48:8j7MMWHRuBA5EsTS@manoj.uhq5r.mongodb.net/'; // Replace with your MongoDB URI
 
 const app = express();
 app.use(express.json()); // Parse JSON requests
