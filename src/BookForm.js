@@ -129,7 +129,7 @@ export default function BookForm() {
           type="text"
           className="form-control"
           id="arrival"
-          placeholder="Enter Arrival Location Name"
+          placeholder="Enter Arrival Location"
           value={arrival}
           onChange={handleArrivalChange}
           required
